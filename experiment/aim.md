@@ -1,1 +1,1 @@
-### Aim of the experiment
+### Programming with on-chip Timers/Counters
