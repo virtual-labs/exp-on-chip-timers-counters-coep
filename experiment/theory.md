@@ -34,10 +34,10 @@
 | Parameter   | Timer 0 | Timer 1 & 3 | Timer 2 & 4 |
 |----------|----------|----------|----------|
 | Size of timer register    | 8-bit or 16-bit | 16-bit   | 8-bit  |
-| Clock Source (Internal)  |$$\vec{F}_{osc}/4$$   | $$\vec{F}_{osc}/4$$   |$$\vec{F}_{osc}/4$$  |
-|Clock Source (External)     | T0CKI Pin T13CKI Pin   | T1OSC   | None  |
-|Clock Scaling (Prescaler)| Prescaler 2-bits(1:1 -> 1:8) | Prescaler(1:1, 1:4, 1:8)   | Postscaler(1:1 ->1:16)  |
-| Interrupt Event|On Overflow|On Overflow| TMR Reg matches with PR2 |
+| Clock Source (Internal)  |a   | b   |c  |
+| Clock Source (External)     | T0CKI Pin T13CKI Pin   | T1OSC   | None  |
+| Clock Scaling (Prescaler) | Prescaler 2-bits(1:1 -> 1:8) | Prescaler(1:1, 1:4, 1:8)   | Postscaler(1:1 ->1:16)  |
+| Interrupt Event | On Overflow | On Overflow | TMR Reg matches with PR2 |
 
 #### 4. Timer0 Module in PIC Microcontroller
 
@@ -106,7 +106,7 @@ current count value which is updated by clock source.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 | R/W - 0 | R/W - 0 | R/W - 0 | R/W - 0 | R/W - 0 | R/W - 0 | R/W -0 | R/W - 0 |
 |------|------|------|------|-------|------|------|------|
-|GIE/GIEH|PEIE/GIEL|TMR0IE|INT0IE|RBIE|TMR0IF|INT0IF| $$\vec{RBIF}^{1}$$ |
+|GIE/GIEH|PEIE/GIEL|TMR0IE|INT0IE|RBIE|TMR0IF|INT0IF| $\vec{RBIF}^{1}$ |
 |bit-7|||||||bit-0 |
 
  | **Bit No.** | **Control Bit** |Description | 
