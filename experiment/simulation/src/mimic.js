@@ -132,16 +132,16 @@ cathode.click(function(){
 		if (diodSelection==0){
 		if(RcircleFlag==1){	
 			crossCheckConnect=true;	
-			cathode_connection_arr[0]=paper.path("M "+(x+360)+" "+(y-18.5)+ "l 0 0").attr({'stroke-width':3});			
+			cathode_connection_arr[0]=paper.path("M "+(x+360)+" "+(y-18.5)+ "l 0 0").attr({'stroke-width':3,'stroke':'#1a0dab'});			
 			cathode_connection_arr[0].animate({path :"M"+(x+360)+" "+(y-18.5)+"l -30 -1   "},1000, function(){
 			
-			cathode_connection_arr[0]=paper.path("M "+(x+330)+" "+(y-18.5)+ "l 0 0").attr({'stroke-width':3});
+			cathode_connection_arr[0]=paper.path("M "+(x+330)+" "+(y-18.5)+ "l 0 0").attr({'stroke-width':3,'stroke':'#1a0dab'});
 			cathode_connection_arr[0].animate({path :"M"+(x+330)+" "+(y-18.5)+" l 0 -50 "},1000, function(){
 			
-			cathode_connection_arr[0]=paper.path("M "+(x+331)+" "+(y-68.5)+ "l 0 0").attr({'stroke-width':3});
+			cathode_connection_arr[0]=paper.path("M "+(x+331)+" "+(y-68.5)+ "l 0 0").attr({'stroke-width':3,'stroke':'#1a0dab'});
 			cathode_connection_arr[0].animate({path :"M"+(x+331)+" "+(y-68.5)+"l -164 0"},1000, function(){
 			
-			cathode_connection_arr[0]=paper.path("M "+(x+168)+" "+(y-68.5)+ "l 0 0").attr({'stroke-width':3});
+			cathode_connection_arr[0]=paper.path("M "+(x+168)+" "+(y-68.5)+ "l 0 0").attr({'stroke-width':3,'stroke':'#1a0dab'});
 			cathode_connection_arr[0].animate({path :"M"+(x+168)+" "+(y-68.5)+"l 0 46"},1000, function(){
 				
 			});
@@ -152,7 +152,7 @@ cathode.click(function(){
 	}else{
 		if(RcircleFlag==1){	
 			crossCheckConnect=true;		
-			cathode_connection_arr[0]=paper.path("M "+(x+360)+" "+(y-18.5)+ "l 0 0").attr({'stroke-width':3});			
+			cathode_connection_arr[0]=paper.path("M "+(x+360)+" "+(y-18.5)+ "l 0 0").attr({'stroke-width':3,'stroke':'#1a0dab'});			
 			cathode_connection_arr[0].animate({path :"M"+(x+360)+" "+(y-18.5)+"l -73 -1 "},1000, function(){
 			
 			
@@ -174,16 +174,16 @@ Rcircle.click(function(){
 	if (diodSelection==0){
 		if(cathodFlag==1){	
 			verifyRcircleConnect=true;
-			cathode_connection_arr[0]=paper.path("M "+(x+168)+" "+(y-23.5)+ "l 0 0").attr({'stroke-width':3});
+			cathode_connection_arr[0]=paper.path("M "+(x+168)+" "+(y-23.5)+ "l 0 0").attr({'stroke-width':3,'stroke':'#1a0dab'});
 			cathode_connection_arr[0].animate({path :"M"+(x+168)+" "+(y-23.5)+"l 0 -46"},1000, function(){
 					
-			cathode_connection_arr[0]=paper.path("M "+(x+168)+" "+(y-68.5)+ "l 0 0").attr({'stroke-width':3});
+			cathode_connection_arr[0]=paper.path("M "+(x+168)+" "+(y-68.5)+ "l 0 0").attr({'stroke-width':3,'stroke':'#1a0dab'});
 			cathode_connection_arr[0].animate({path :"M"+(x+168)+" "+(y-68.5)+"l 164 0"},1000, function(){
 			
-			cathode_connection_arr[0]=paper.path("M "+(x+331)+" "+(y-68.5)+ "l 0 0").attr({'stroke-width':3});
+			cathode_connection_arr[0]=paper.path("M "+(x+331)+" "+(y-68.5)+ "l 0 0").attr({'stroke-width':3,'stroke':'#1a0dab'});
 			cathode_connection_arr[0].animate({path :"M"+(x+331)+" "+(y-68.5)+" l 0 50 "},1000, function(){
 				
-			cathode_connection_arr[0]=paper.path("M "+(x+330)+" "+(y-18.5)+ "l 0 0").attr({'stroke-width':3});			
+			cathode_connection_arr[0]=paper.path("M "+(x+330)+" "+(y-18.5)+ "l 0 0").attr({'stroke-width':3,'stroke':'#1a0dab'});			
 			cathode_connection_arr[0].animate({path :"M"+(x+330)+" "+(y-18.5)+"l 30 1   "},1000, function(){
 				
 			});
@@ -194,7 +194,7 @@ Rcircle.click(function(){
 	}else{
 		if(cathodFlag==1){
 			verifyRcircleConnect=true;
-			cathode_connection_arr[0]=paper.path("M "+(x+287)+" "+(y-18.5)+ "l 0 0").attr({'stroke-width':3});			
+			cathode_connection_arr[0]=paper.path("M "+(x+287)+" "+(y-18.5)+ "l 0 0").attr({'stroke-width':3,'stroke':'#1a0dab'});			
 			cathode_connection_arr[0].animate({path :"M"+(x+287)+" "+(y-18.5)+"l 73 1 "},1000, function(){
 					
 			});
@@ -215,13 +215,13 @@ terminalRB0.click(function(){
 	}else{
 	if(anodeflg==1){ 
 		verifyRC2Connection=true;
-				StoT_connection_arr2[0]=paper.path("M "+(x+164)+" "+(y-19)+ "l 0 0").attr({'stroke-width':3});			
+				StoT_connection_arr2[0]=paper.path("M "+(x+164)+" "+(y-19)+ "l 0 0").attr({'stroke-width':3,'stroke':'#1a0dab'});			
 				StoT_connection_arr2[0].animate({path :"M"+(x+164)+" "+(y-19)+"l -160 0"},500, function(){
 				
-				StoT_connection_arr2[0]=paper.path("M "+(x+5)+" "+(y-19)+ "l 0 0").attr({'stroke-width':3});			
+				StoT_connection_arr2[0]=paper.path("M "+(x+5)+" "+(y-19)+ "l 0 0").attr({'stroke-width':3,'stroke':'#1a0dab'});			
 				StoT_connection_arr2[0].animate({path :"M"+(x+5)+" "+(y-19)+"l 0 218"},500, function(){
 				
-				StoT_connection_arr2[0]=paper.path("M "+(x+5)+" "+(y+198)+ "l 0 0").attr({'stroke-width':3});			
+				StoT_connection_arr2[0]=paper.path("M "+(x+5)+" "+(y+198)+ "l 0 0").attr({'stroke-width':3,'stroke':'#1a0dab'});			
 				StoT_connection_arr2[0].animate({path :"M"+(x+5)+" "+(y+198)+"l 19 0"},500, function(){				
 						
 					inputpinName=1;
@@ -244,13 +244,13 @@ if(verifyRC2Connection	==true){
 }else{
 	if(c2Flag==1){
 		verifyAconnect=true;	
-			anode_connection_arr[0]=paper.path("M "+(x+24)+" "+(y+198)+ "l 0 0").attr({'stroke-width':3});			
+			anode_connection_arr[0]=paper.path("M "+(x+24)+" "+(y+198)+ "l 0 0").attr({'stroke-width':3,'stroke':'#1a0dab'});			
 			anode_connection_arr[0].animate({path :"M"+(x+24)+" "+(y+198)+"l -20 0"},500, function(){
 				
-			anode_connection_arr[0]=paper.path("M "+(x+5)+" "+(y+198)+ "l 0 0").attr({'stroke-width':3});			
+			anode_connection_arr[0]=paper.path("M "+(x+5)+" "+(y+198)+ "l 0 0").attr({'stroke-width':3,'stroke':'#1a0dab'});			
 			anode_connection_arr[0].animate({path :"M"+(x+5)+" "+(y+198)+"l 0 -218"},500, function(){
 				
-			anode_connection_arr[0]=paper.path("M "+(x+5)+" "+(y-19)+ "l 0 0").attr({'stroke-width':3});			
+			anode_connection_arr[0]=paper.path("M "+(x+5)+" "+(y-19)+ "l 0 0").attr({'stroke-width':3,'stroke':'#1a0dab'});			
 			anode_connection_arr[0].animate({path :"M"+(x+5)+" "+(y-19)+"l 158 0"},500, function(){					
 				
 					inputpinName=1;
