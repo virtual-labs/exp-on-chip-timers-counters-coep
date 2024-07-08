@@ -36,7 +36,7 @@
 | Parameter   | Timer 0 | Timer 1 & 3 | Timer 2 & 4 |
 |----------|----------|----------|----------|
 | Size of timer register    | 8-bit or 16-bit | 16-bit   | 8-bit  |
-| Clock Source (Internal)  |Fosc/4   | Fosc/4   |F_osc/4  |
+| Clock Source (Internal)  |Fosc/4   | Fosc/4   |Fosc/4  |
 |Clock Source (External)     | T0CKI Pin | T13CKI Pin/T1OSC   | None  |
 |Clock Scaling (Prescaler)| Prescaler 8-bits(1:2 -> 1:256) | Prescaler 2-bits (1:1, -> 1:8)   | prescaler (1:1, 1:4, 1:8) Postscaler(1:1 ->1:16)  |
 | Interrupt Event|On Overflow|On Overflow| TMR Reg matches with PR2 |
