@@ -2,7 +2,7 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "The Timer2 module in PIC18F4550 supports which of the following modes?",
+      "question": "1) The Timer2 module in PIC18F4550 supports which of the following modes?",
       "answers": {
         "a": "Timer mode only",
         "b": "Counter mode only",
@@ -14,7 +14,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "Which register is used to configure the Timer2 prescaler value in PIC18F4550?",
+      "question": "2) Which register is used to configure the Timer2 prescaler value in PIC18F4550?",
       "answers": {
         "a": "T2CON",
         "b": "TMR2",
@@ -26,7 +26,7 @@
       "difficulty": "beginner"
     },
 	{
-      "question": "Which Timer2 mode allows for the generation of a PWM signal in PIC18F4550?",
+      "question": "3) Which Timer2 mode allows for the generation of a PWM signal in PIC18F4550?",
       "answers": {
         "a": "Timer mode",
         "b": "Counter mode",
