@@ -1,6 +1,6 @@
 ### Procedure
 
-##### Simulator :
+##### Simulator:
 - step 1 : Select Operating Frequency.
 - step 2 : Select Timer.
 - step 3 : Select Prescaler.
