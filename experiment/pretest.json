@@ -2,7 +2,7 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "How many timer are available in PIC18F4550?",
+      "question": "1) How many timer are available in PIC18F4550?",
       "answers": {
         "a": "1",
         "b": "2",
@@ -13,7 +13,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "Which timer is used for PWM generation?",
+      "question": "2) Which timer is used for PWM generation?",
       "answers": {
         "a": "Timer0",
         "b": "Timer1",
