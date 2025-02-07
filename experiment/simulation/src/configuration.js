@@ -290,7 +290,7 @@ var enteredOffDly=0;
 					  $("#generateCode").prop("disabled",false);
 					  
 				}else{
-					toastr.warning("Enter Same Value as ON Delay.because here ON Delay and OFF Delay are same.");
+					toastr.warning("ON Delay and OFF Delay must be same.");
 				}
 			  
 			}
@@ -549,7 +549,7 @@ $("#downloadCode").click(function () {
 //			$("#modelMsg").html("<b class='boldTextGreen'>Download Code File Successfully.</b>");	
 	}else{
 //		$("#modelMsg").html("<b class='boldTextGreen'>Please Generate The Code First and Then You Can Download Code File.</b>");
-		toastr.warning("Please Generate The Code First and Then You Can Download Code File.")
+		toastr.warning("Please Generate The Code to Download Code File.")
 	}
 
  
