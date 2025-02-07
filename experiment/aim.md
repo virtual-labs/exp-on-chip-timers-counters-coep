@@ -1,7 +1,7 @@
 ### Aim
 Programming with on-chip Timers/Counters
 
-### OBJECTIVE
+### Objective
 
 - To understand the basic concepts of Timer and Counter
 - To study in detail Timer0 of PIC Microcontroller
