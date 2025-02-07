@@ -281,7 +281,7 @@ checkStatus.click(function(){
 					toastr.success("Connection Established Successfully. Now Click on Run Button.");
 					
 				}else if(RcircleFlag==0 && cathodFlag==0){
-					toastr.warning("First Establish Cathode Connection.")
+					toastr.warning("Establish Cathode Connection first.")
 				}else if(anodeflg!=1 && pinVal!=pinName){
 					toastr.warning("Connect the pin.")
 				}else{
@@ -307,10 +307,10 @@ runimg.click(function(){
 			//		start();
 				
 				}else{
-					toastr.warning("Please check the connection status first.");
+					toastr.warning("Please check the connection status.");
 		    	}
 		}else if(checkStatusClickVal!=1){
-			toastr.warning("Please check the connection status first.");	//You have already run the circuit.
+			toastr.warning("Please check the connection status.");	//You have already run the circuit.
 		}else{
 			toastr.warning("You have already clicked the Run button.");	//You have already run the circuit.
 		}
