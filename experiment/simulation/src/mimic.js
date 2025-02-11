@@ -282,7 +282,7 @@ checkStatus.click(function(){
 					
 				}else if(RcircleFlag==0 && cathodFlag==0){
 					toastr.warning("Establish Cathode Connection first.")
-				}else if(anodeflg!=1 && pinVal!=pinName){
+				}else if(anodeflg!=1 && pinVal!=inputpinName){
 					toastr.warning("Connect the pin.")
 				}else{
 					toastr.error("Wrong Connection. Please Try Again.");
