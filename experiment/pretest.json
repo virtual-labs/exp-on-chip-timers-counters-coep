@@ -22,6 +22,50 @@
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
+    },
+    {
+	  "question": "3) What is the primary purpose of a timer in a microcontroller?",
+      "answers": {
+        "a": "To store data permanently",
+        "b": "To count external events like button presses",
+        "c": "To measure time intervals using clock pulses",
+        "d": "To increase the microcontroller's clock speed"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+	{
+      "question": "4) Which of the following is NOT a way to extend the timer's maximum measurable time?",
+      "answers": {
+        "a": "Using a prescaler",
+        "b": "Using interrupts",
+        "c": "Using a slower oscillator",
+        "d": "Increasing the clock speed"
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+	{
+      "question": "5)What is the function of a prescaler in a timer operation?",
+      "answers": {
+        "a": "To increase the timer's resolution",
+        "b": "To reduce the frequency of clock pulses before feeding them to the timer",
+        "c": "To reset the timer on overflow",
+        "d": "To enable the timer's interrupt feature"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+	{
+	  "question": "6)Which timer(s) in a PIC microcontroller has both prescaler and postscaler?",
+      "answers": {
+        "a": "Timer 0",
+        "b": "Timer 1",
+        "c": "Timer 2 & 4",
+        "d": "None of the above"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
     }
 	
 	
