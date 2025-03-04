@@ -48,18 +48,18 @@ var intruptCorr=parseInt(intruptSelect);
 var ON_dlyVal=parseInt(ONdlySelect);
 var OFF_dlyVal=parseInt(OffDlySelect);
 
-console.log(" mimic :frequencyVal = "+frequencyVal);
-console.log(" mimic :timerVal = "+timerVal);
-console.log(" mimic :ON_dlyVal = "+ON_dlyVal);
-console.log(" mimic :OFF_dlyVal = "+OFF_dlyVal);
-console.log(" mimic :intruptCorr = "+intruptCorr);
-console.log(" mimic :prescalerCorr = "+prescalerCorr);
+//console.log(" mimic :frequencyVal = "+frequencyVal);
+//console.log(" mimic :timerVal = "+timerVal);
+//console.log(" mimic :ON_dlyVal = "+ON_dlyVal);
+//console.log(" mimic :OFF_dlyVal = "+OFF_dlyVal);
+//console.log(" mimic :intruptCorr = "+intruptCorr);
+//console.log(" mimic :prescalerCorr = "+prescalerCorr);
 var graphtimerVal=timerVal-1;
-var interval_plot1=(ON_dlyVal+OFF_dlyVal)/1000;
+var interval_plot1=(ON_dlyVal+OFF_dlyVal)/1000; 
 var offTime1=ON_dlyVal/1000;
 var onTime1=OFF_dlyVal/1000;
 var onTime11=onTime1+offTime1;
-console.log("onTime1 - "+onTime1+", off - "+offTime1);
+//console.log("onTime1 - "+onTime1+", off - "+offTime1);
 
 var checkStatus=paper.image("images/checkBtn1.png",x-90,y-150,200, 50);
 var resetimg=paper.image("images/resetconnectioPreview.png",x+240,y-150,180, 50);
@@ -111,11 +111,11 @@ var groundConnection=paper.path("M"+(x+262)+" "+(y+158)+"l 64 0 l 0 112   ").att
 
 resetimg.click(function(){
 //	$("#canvas-div").html('');
-	$("#plot").html("");
-	$("#plot").prop("hidden",true);
-	reset();
+	$("#plot").html("");	
 	paper.clear();
 	mimic(freqSelect,timerSelect,prescalerSelect,intruptSelect,ONdlySelect,OffDlySelect);	
+	reset();
+	$("#plot").prop("hidden",true);
 })
 
 
