@@ -1,0 +1,714 @@
+<!DOCTYPE html><html lang="en"><head>
+      <!--Google Tag Manager-->
+      <script class="gtm">
+        var dataLayer = [{
+        'labName': 'Virtual Lab',
+        'discipline': 'Test',
+        'college': 'COEP',
+        'phase': 'Testing',
+        'expName': 'PROGRAMMING WITH ON-CHIP TIMERS/COUNTERS',
+        'expShortName': 'on-chip-timers-counters'
+        }];
+    
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-5NMQ9NQ');
+      </script>
+      <!--End Google Tag Manager-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="" name="description">
+    <meta content="" name="author">
+    
+    	<meta name="experiment-short-name" content="on-chip-timers-counters">
+    	<meta name="developer-institute" content="COEP">
+    	<meta name="learning-unit" content="PROGRAMMING WITH ON-CHIP TIMERS/COUNTERS">
+    	<meta name="task-name" content="Theory">
+    
+    <!-- For iPhone -->
+    <meta name="msapplication-TileColor" content="#4076e0">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#4076e0">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#4076e0">
+    <title>Virtual Labs</title>
+    <link rel="shortcut icon" href="./assets/images/favicon.ico">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/4.0.0/github-markdown.min.css" integrity="sha512-Oy18vBnbSJkXTndr2n6lDMO5NN31UljR8e/ICzVPrGpSud4Gkckb8yUpqhKuUNoE+o9gAb4O/rAxxw1ojyUVzg==" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&amp;family=Raleway&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/github-markdown.min.css">
+    <link rel="stylesheet" href="./assets/css/vlabs-style.css">
+    <link rel="stylesheet" href="./assets/css/toast.css">
+    <link rel="stylesheet" href="./assets/katex_assets/katex.min.css">
+    
+    <script src="./assets/js/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <style>
+      h1 {
+      font-size: 1.8rem;
+      }
+      h2 {
+      font-size: 1.4rem;
+      }
+      h3 {
+      font-size: 1.2rem;
+      }
+
+      h2, h3 {
+      font-weight: 800;
+      }
+    </style>
+    
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"></head>
+  <body class="p-0 container-fluid vlabs-page d-flex flex-column justify-content-between">
+      <!--Google Tag Manager (noscript)-->
+      <noscript class="gtm">
+        <iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-5NMQ9NQ" style="display:none;visibility:hidden" width="0">
+        </iframe>
+      </noscript>
+      <!--End Google Tag Manager (noscript)-->
+  
+      <header class="vlabs-header sticky-top bg-white">
+        <nav class="p-0 navbar navbar-light d-flex align-items-stretch">
+          
+          <button class="navbar-toggler px-4" type="button" onclick="toggle()">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="d-flex justify-content-center">        
+            <a href="https://vlab.co.in" class="navbar-brand">
+              <img src="./assets/images/vlabs-color-small-moe.jpg" alt="vlabs logo" class="vlabs-logo">
+            </a>
+          </div>
+          
+          <div id="headerNavbar" class="d-none border-top flex-grow-1 d-lg-flex align-items-center justify-content-end">
+            <div class="svc-rating-display">
+                <rating-display spreadsheetid="1x12nhpp0QvnsA6x-O1sV4IA9SAbfVsq_wiexWkutOmU" sheetname="Experiment-Database" columnname="Experiment Short Name" columnvalue="on-chip-timers-counters" imagesdirectory="/plugins/svc-rating/images/">
+                </rating-display>
+            </div>      <div class="svc-rating-submit">
+                <rating-submit title="Rate" this="" experiment="">
+                </rating-submit>
+            </div>      <bug-report id="bug-report" title="[BUG REPORT] PROGRAMMING WITH ON-CHIP TIMERS/COUNTERS" page-type="text" context-info="{&quot;organisation&quot;:&quot;Virtual Labs&quot;,&quot;developer_institute&quot;:&quot;COEP&quot;,&quot;expname&quot;:&quot;PROGRAMMING WITH ON-CHIP TIMERS/COUNTERS&quot;,&quot;labname&quot;:&quot;Virtual Lab&quot;,&quot;phase&quot;:&quot;Testing&quot;}" checkbox-json="{&quot;text&quot;:[&quot;Insufficient Content&quot;],&quot;video&quot;:[&quot;Insufficient Content&quot;],&quot;assesment&quot;:[&quot;Incorrect Options&quot;,&quot;Incorrect Answer&quot;,&quot;Incorrect Question&quot;],&quot;assessment&quot;:[&quot;Incorrect Options&quot;,&quot;Incorrect Answer&quot;,&quot;Incorrect Question&quot;],&quot;simulation&quot;:[&quot;Simulation Not Working&quot;,&quot;Incorrect Results/Observations&quot;,&quot;Insufficient/Incorrect Instructions&quot;],&quot;DEFAULT&quot;:[&quot;Page Not Loading&quot;,&quot;Content Not Visible&quot;,&quot;Incorrect Content&quot;]}" button_style="border: none; color: #fff; background-color: #288ec8; text-align: center; font-size: 1.05rem; border-radius: 1em;padding: 0.6em 1.2em; margin: 0 10px" position="override" custom_button_class="v-button"></bug-report>
+          </div>
+        </nav>
+      </header>
+      <div class="container-fluid flex-fill d-flex flex-column vlabs-page-main">
+        <div class="row d-flex justify-content-between">
+          <div class="flex-column">
+          <div class="row py-4 px-4 breadcrumbs">
+          	<div class="title is-4 tools">Tools</div>
+          	<span class="mx-2">
+          		<i aria-hidden="true" class="fa fa-angle-right"></i>
+          	</span>
+          	<a href="performance-report.html" class="my-2 mx-3" target="_blank">
+          		<button class="v-button">Performance Tool</button>
+          	</a>
+          	<a href="validator-report.html" class="my-2 mx-3" target="_blank">
+          		<button class="v-button">Validation Tool</button>
+          	</a>
+          </div>
+          </div>
+        </div>
+        <div class="row flex-grow-1 d-flex flex-nowrap flex-column flex-lg-row">
+          <div class="modal fade popupmenu" id="popupMenu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">
+                              <a href="https://vlab.co.in" class="navbar-brand">
+                                  <img src="./assets/images/vlabs-color-small-moe.jpg" alt="vlabs logo" class="vlabs-logo">
+                              </a>
+                          </h5>
+                          <button type="button" class="btn-close align-self-center" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body nav-menu">
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="index.html" class="p-2 ">
+                                      Aim
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="theory.html" class="p-2  current-item ">
+                                      Theory
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="pretest.html" class="p-2 ">
+                                      Pretest
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="procedure.html" class="p-2 ">
+                                      Procedure
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="simulation.html" class="p-2 ">
+                                      Simulation
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="posttest.html" class="p-2 ">
+                                      Posttest
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="references.html" class="p-2 ">
+                                      References
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="feedback.html" class="p-2 ">
+                                      Feedback
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="nav flex-column sidebar nav-menu flex-shrink-0 px-lg-4 align-items-center align-items-lg-start hidden d-none d-lg-flex" id="menu">
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="index.html" class="p-2 ">
+                        Aim
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="theory.html" class="p-2  current-item ">
+                        Theory
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="pretest.html" class="p-2 ">
+                        Pretest
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="procedure.html" class="p-2 ">
+                        Procedure
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="simulation.html" class="p-2 ">
+                        Simulation
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="posttest.html" class="p-2 ">
+                        Posttest
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="references.html" class="p-2 ">
+                        References
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="feedback.html" class="p-2 ">
+                        Feedback
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+          </div>          <div class="vlabs-page-content px-5 pb-4 flex-grow-1 markdown-body">
+            <div class="text-center fix-spacing">
+              <h2 id="programming-with-on-chip-timerscounters">Programming with on-chip Timers/Counters</h2>
+          
+            </div>
+              <h2 id="theory-">Theory :</h2>
+          <h4 id="1-timer">1. Timer</h4>
+          <p> The microcontroller oscillator uses quartz crystal for its operation. Even though it is not the simplest solution, there are many reasons to use it. The frequency of such oscillator is precisely defined and very stable, so that pulses it generates are always of the same width, which makes them ideal for time measurement. Such oscillators are also used in quartz watches. If it is necessary to measure time between two events, it is sufficient to count up pulses generated by this oscillator. This is exactly what the timer does. Most programs use these miniature electronic ‘stopwatches'. These are commonly 8- or 16-bit SFRs the contents of which are automatically incremented by each coming pulse. Once a register is completely loaded and overflowed, an interrupt may be generated! 
+           If the timer uses an internal quartz oscillator for its operation then it can be used to measure time between two events (if the register value is A at the moment measurement starts, and B at the moment it terminates, then the elapsed time is equal to the result of subtraction B - A). If registers use pulses coming from external source then such a timer is turned into a counter.</p>
+          <h5 id="11-how-does-the-timer-operate">1.1 How does the timer operate?</h5>
+          <p> In practice, pulses generated by the quartz oscillator are once per each machine cycle, directly or via a prescaler, brought to the circuit which increments the number stored in the timer register. If one instruction (one machine cycle) lasts for four quartz oscillator periods then this number will be incremented a million times per second (each microsecond) by embedding quartz with the frequency of 4MHz. It is easy to measure short time intervals, up to 256 microseconds, in the way described above because it is the largest number that one register can store. This restriction may be easily overcome in several ways such as by using a slower oscillator, registers with more bits, prescaler or interrupts. The first two solutions have some weaknesses so it is more recommended to use prescaler or interrupt.</p>
+          <p><img src="images/image1.PNG" alt=" *Ex-3*"></p>
+          <h5 id="12-using-a-prescaler-in-timer-operation">1.2 Using a prescaler in timer operation</h5>
+          <p> A prescaler is an electronic device used to reduce frequency by a predetermined factor. In order to generate one pulse on its output, it is necessary to bring 1, 2 , 4 or more pulses on its input. Most microcontrollers have one or more prescaler built in and their division rate may be changed from within the program. The prescaler is used when it is necessary to measure longer periods of time. If one prescaler is shared by timer and watchdog timer, it cannot be used by both of them simultaneously.</p>
+          <p><img src="images/image2.PNG" alt=" *Ex-3*"></p>
+          <h5 id="13-using-interrupt-in-timer-operation">1.3 Using interrupt in timer operation</h5>
+          <p> If the timer register consists of 8 bits, the largest number it can store is 255. As for 16-bit registers it is the number 65535. If this number is exceeded, the timer will be automatically reset and counting will start at zero again. This condition is called an overflow. If enabled from within the program, the overflow can cause an interrupt, which gives completely new possibilities. For example, the state of registers used for counting seconds, minutes or days can be changed in an interrupt routine. The whole process (except for interrupt routine) is automatically performed behind the scenes, which enables the main circuits of the microcontroller to operate normally. This figure 3 illustrates the use of an interrupt in timer operation. Delays of arbitrary duration, having almost no influence on the main program execution, can be easily obtained by assigning the prescaler to the timer.</p>
+          <p><img src="images/image3.PNG" alt=" *Ex-3*"></p>
+          <h4 id="2-counters">2. Counters</h4>
+          <p> If the timer receives pulses from the microcontroller input pin, then it turns into a counter. Obviously, it is the same electronic circuit able to operate in two different modes. The only difference is that in this case pulses to be counted come over the microcontroller input pin and their duration (width) is mostly undefined. This is why they cannot be used for time measurement, but for other purposes such as counting products on an assembly line, number of axis rotation, passengers etc. (depending on sensor in use).</p>
+          <h4 id="3-timers--counters-in-pic-microcontroller">3. Timers / Counters in PIC Microcontroller</h4>
+          <p> There are 3 - 5 timers on board in PIC microcontroller. These timers can also be used as counters when external pulses are applied. The timers are programmable, and sometimes share with other peripheral devices. These are named as TMR0, TMR1, TMR2, TMR3 and TMR4. There are few other timers, not to be discussed here like Watchdog Timer and Brown-Out timers. These timers are useful in measuring the time delays in various events as well as counting and timing external events.</p>
+          <p><strong>Comparison of Timers in PIC Microcontroller</strong></p>
+          <table>
+          <thead>
+          <tr>
+          <th>Parameter</th>
+          <th>Timer 0</th>
+          <th>Timer 1 &amp; 3</th>
+          <th>Timer 2 &amp; 4</th>
+          </tr>
+          </thead>
+          <tbody><tr>
+          <td>Size of timer register</td>
+          <td>8-bit or 16-bit</td>
+          <td>16-bit</td>
+          <td>8-bit</td>
+          </tr>
+          <tr>
+          <td>Clock Source (Internal)</td>
+          <td>Fosc/4</td>
+          <td>Fosc/4</td>
+          <td>Fosc/4</td>
+          </tr>
+          <tr>
+          <td>Clock Source (External)</td>
+          <td>T0CKI Pin</td>
+          <td>T13CKI Pin/T1OSC</td>
+          <td>None</td>
+          </tr>
+          <tr>
+          <td>Clock Scaling (Prescaler)</td>
+          <td>Prescaler 8-bits(1:2 -&gt; 1:256)</td>
+          <td>Prescaler 2-bits (1:1, -&gt; 1:8)</td>
+          <td>prescaler (1:1, 1:4, 1:8) Postscaler(1:1 -&gt;1:16)</td>
+          </tr>
+          <tr>
+          <td>Interrupt Event</td>
+          <td>On Overflow</td>
+          <td>On Overflow</td>
+          <td>TMR Reg matches with PR2</td>
+          </tr>
+          </tbody></table>
+          <h4 id="4-timer0-module-in-pic-microcontroller">4. Timer0 Module in PIC Microcontroller</h4>
+          <p>The Timer0 module incorporates the following features:</p>
+          <ul>
+          <li>Software selectable operation as a timer or</li>
+          <li>counter in both 8-bit or 16-bit modes</li>
+          <li>Readable and writable registers</li>
+          <li>Dedicated 8-bit, software programmable</li>
+          <li>prescaler</li>
+          <li>Selectable clock source (internal or external)</li>
+          <li>Edge select for external clock</li>
+          <li>Interrupt on overflow </li>
+          </ul>
+          <p> The T0CON register (Register 11-1) controls all aspects of the module’s operation, including the prescale selection. It is both readable and writable.  Figure A. shows a simplified block diagram of the Timer0 module in 8-bit mode. Figure B. shows a simplified block diagram of the Timer0 module in 16-bit mode.</p>
+          <p><img src="images/image4.png" alt=" *Ex-3*"></p>
+          <h5 id="41-timer0-operation">4.1 Timer0 Operation</h5>
+          <p> Timer0 can operate as either a timer or a counter; the mode is selected by clearing the T0CS bit (T0CON&lt;5&gt;). In Timer mode, the module increments on every clock by default unless a different prescaler value is selected. If the TMR0 register is written to, the increment is inhibited for the following two instruction cycles. The user can work around this by writing an adjusted value to the TMR0 register. The Counter mode is selected by setting the T0CS bit (= 1). In Counter mode, Timer0 increments either on every rising or falling edge of pin RA4/T0CKI. The incrementing edge is determined by the Timer0 Source Edge Select bit, T0SE (T0CON&lt;4&gt;); clearing this bit selects the rising edge. An external clock source can be used to drive Timer0; however, it must meet certain requirements to ensure that the external clock can be synchronized with the internal phase clock (TOSC). There is a delay between synchronization and the onset of incrementing the timer/counter.</p>
+          <h5 id="42-prescaler">4.2 Prescaler</h5>
+          <p> An 8-bit counter is available as a prescaler for the Timer0 module. The prescaler is not directly readable or writable; its value is set by the PSA and T0PS2:T0PS0 bits (T0CON&lt;3:0&gt;) which determine the prescaler assignment and prescale ratio. Clearing the PSA bit assigns the prescaler to the Timer0 module. When it is assigned, prescale values from 1:2 through 1:256, in power-of-2 increments are selectable. When assigned to the Timer0 module, all instructions writing to the TMR0 register clear the prescaler count.</p>
+          <h5 id="43-timer0-interrupt">4.3 Timer0 Interrupt</h5>
+          <p> The TMR0 interrupt is generated when the TMR0 register overflows from FFh to 00h in 8-bit mode, or from FFFFh to 0000h in 16-bit mode. This overflow sets the TMR0IF flag bit. The interrupt can be masked by clearing the TMR0IE bit (INTCON&lt;5&gt;). Before reenabling the interrupt, the TMR0IF bit must be cleared in software by the Interrupt Service Routine. Since Timer0 is shut down in Sleep mode, the TMR0 interrupt cannot awaken the processor from Sleep.  </p>
+          <h5 id="44-timer0-register-map">4.4 Timer0 Register Map:</h5>
+          <table>
+          <thead>
+          <tr>
+          <th>SFR</th>
+          <th>Description</th>
+          <th>Access</th>
+          <th>Reset Value</th>
+          <th>Address</th>
+          </tr>
+          </thead>
+          <tbody><tr>
+          <td>T0CON</td>
+          <td>Timer0 Control Register</td>
+          <td>Read/Write</td>
+          <td>0xFF</td>
+          <td>0xFD5</td>
+          </tr>
+          <tr>
+          <td>TMR0L</td>
+          <td>Timer0  Register Lower Byte</td>
+          <td>Read/Write</td>
+          <td>UNKNOWN</td>
+          <td>0xFD6</td>
+          </tr>
+          <tr>
+          <td>TMR0H</td>
+          <td>Timer0 Register Higher Byte</td>
+          <td>Read/Write</td>
+          <td>0x00</td>
+          <td>0xFD7</td>
+          </tr>
+          <tr>
+          <td>INTCON</td>
+          <td>Interrupt Control Register</td>
+          <td>Read/Write</td>
+          <td>0x00</td>
+          <td>0xFF2</td>
+          </tr>
+          <tr>
+          <td>INTCON2</td>
+          <td>Interrupt Control Register 2</td>
+          <td>Read/Write</td>
+          <td>0xFF</td>
+          <td>0xFF1</td>
+          </tr>
+          </tbody></table>
+          <h5 id="register-sfr-description">Register (SFR) Description</h5>
+          <h6 id="441-tmr0l-"><strong>4.4.1 TMR0L :</strong></h6>
+          <p>Used 8-bit and 16bit mode. The register holds the current count value which is updated by clock source. User must write initial value.</p>
+          <h6 id="442-tmr0h-"><strong>4.4.2 TMR0H :</strong></h6>
+          <p>Used only in 16-bit mode. The register holds the higher byte current count value which is updated by clock source.</p>
+          <h6 id="443-t0con-timer0-control-register"><strong>4.4.3 T0CON: Timer0 Control Register</strong></h6>
+          <table>
+          <thead>
+          <tr>
+          <th>R/W - 1</th>
+          <th>R/W - 1</th>
+          <th>R/W - 1</th>
+          <th>R/W - 1</th>
+          <th>R/W - 1</th>
+          <th>R/W - 1</th>
+          <th>R/W - 1</th>
+          <th>R/W - 1</th>
+          </tr>
+          </thead>
+          <tbody><tr>
+          <td>TMR0ON</td>
+          <td>T08BIT</td>
+          <td>T0CS</td>
+          <td>T0SE</td>
+          <td>PSA</td>
+          <td>T0PS2</td>
+          <td>T0PS1</td>
+          <td>T0PS0</td>
+          </tr>
+          <tr>
+          <td>bit-7</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>bit-0</td>
+          </tr>
+          </tbody></table>
+          <table>
+          <thead>
+          <tr>
+          <th><strong>Bit No.</strong></th>
+          <th><strong>Control Bit</strong></th>
+          <th><strong>Description</strong></th>
+          </tr>
+          </thead>
+          <tbody><tr>
+          <td>Bit 7</td>
+          <td>TMR0ON</td>
+          <td>Timer0 On/Off Control bit <br> 1 = Enables Timer0, 0 = Stops Timer0</td>
+          </tr>
+          <tr>
+          <td>Bit 6</td>
+          <td>T08BIT</td>
+          <td>Timer0 8-Bit/16-Bit Control bit <br> 1 = Timer0 is configured as an 8-bit timer/counter <br> 0 = Timer0 is configured as a 16-bit timer/counter</td>
+          </tr>
+          <tr>
+          <td>Bit 5</td>
+          <td>T0CS</td>
+          <td>Timer0 Clock Source Select bit <br> 1= Transition on T0CKI pin <br> 0 = Internal instruction cycle clock (CLKO)</td>
+          </tr>
+          <tr>
+          <td>Bit 4</td>
+          <td>T0SE</td>
+          <td>Timer0 Source Edge Select bit <br> 1 = Increment on high-to-low transition on T0CKI pin <br> 0 = Increment on low-to-high transition on T0CKI pin</td>
+          </tr>
+          <tr>
+          <td>Bit 3</td>
+          <td>PSA</td>
+          <td>Timer0 Prescaler Assignment bit <br> 1 = TImer0 prescaler is NOT assigned. <br> 0 = Timer0 prescaler is assigned.</td>
+          </tr>
+          <tr>
+          <td>Bit 2-0</td>
+          <td>T0PS2:T0PS0</td>
+          <td>Timer0 Prescaler Select bits <br> 111 = 1:256 Prescale value <br> 110 = 1:128 Prescale value <br> 101 = 1:64 Prescale value <br> 100 = 1:32 Prescale value <br> 011 = 1:16 Prescale value <br> 010 = 1:8 Prescale value <br> 001 = 1:4 Prescale value <br> 000 = 1:2 Prescale value</td>
+          </tr>
+          </tbody></table>
+          <h6 id="444-intcon-interrupt-control-register"><strong>4.4.4 INTCON: Interrupt Control Register</strong></h6>
+          <table>
+          <thead>
+          <tr>
+          <th>R/W - 0</th>
+          <th>R/W - 0</th>
+          <th>R/W - 0</th>
+          <th>R/W - 0</th>
+          <th>R/W - 0</th>
+          <th>R/W - 0</th>
+          <th>R/W -0</th>
+          <th>R/W - 0</th>
+          </tr>
+          </thead>
+          <tbody><tr>
+          <td>GIE/GIEH</td>
+          <td>PEIE/GIEL</td>
+          <td>TMR0IE</td>
+          <td>INT0IE</td>
+          <td>RBIE</td>
+          <td>TMR0IF</td>
+          <td>INT0IF</td>
+          <td>RBIF^1</td>
+          </tr>
+          <tr>
+          <td>bit-7</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>bit-0</td>
+          </tr>
+          </tbody></table>
+          <table>
+          <thead>
+          <tr>
+          <th><strong>Bit No.</strong></th>
+          <th><strong>Control Bit</strong></th>
+          <th>Description</th>
+          </tr>
+          </thead>
+          <tbody><tr>
+          <td>Bit 7</td>
+          <td>GIE/GIEH</td>
+          <td>Global Interrupt Enable bit When IPEN = 0: <br> 1 = Enables all unmasked interrupts <br> 0 = Disables all interrupts <br> When IPEN = 1: <br> 1 = Enables all high priority interrupts <br> 0 = Disables all high priority interrupts</td>
+          </tr>
+          <tr>
+          <td>Bit 6</td>
+          <td>PEIE/GIEL</td>
+          <td>Peripheral Interrupt Enable bit</td>
+          </tr>
+          <tr>
+          <td>Bit 5</td>
+          <td>TMR0IE</td>
+          <td>TMR0 Overflow Interrupt Enable bit <br> 1 = Enables the TMR0 overflow interrupt <br> 0 = Disables the TMR0 overflow interrupt</td>
+          </tr>
+          <tr>
+          <td>Bit 4</td>
+          <td>INT0IE</td>
+          <td>INT0 External Interrupt Enable bit <br> 1 = Enables the INT0 external interrupt <br> 0 = Disables the INT0 external interrupt</td>
+          </tr>
+          <tr>
+          <td>Bit 3</td>
+          <td>RBIE</td>
+          <td>RB Port Change Interrupt Enable bit <br> 1 = Enables the RB port change interrupt <br> 0 = Disables the RB port change interrupt</td>
+          </tr>
+          <tr>
+          <td>Bit 2</td>
+          <td>TMR0IF</td>
+          <td>TMR0 Overflow Interrupt Flag bit <br> 1 = TMR0 register has overflowed (must be cleared in software) <br> 0 = TMR0 register did not overflow</td>
+          </tr>
+          <tr>
+          <td>Bit 1</td>
+          <td>INT0IF</td>
+          <td>INT0 External Interrupt Flag bit <br> 1 = The INT0 external interrupt occurred (must be cleared in software) <br> 0 = The INT0 external interrupt did not occur</td>
+          </tr>
+          <tr>
+          <td>Bit 0</td>
+          <td>RBIF</td>
+          <td>RB Port Change Interrupt Flag bit(1) <br> 1 = At least one of the RB7:RB4 pins changed state (must be cleared in software) <br> 0 = None of the RB7:RB4 pins have changed state</td>
+          </tr>
+          </tbody></table>
+          <h4 id="5-time-delay-generation-using-timer">5. Time delay generation using timer:</h4>
+          <p> The following steps are taken to generate a time delay using polling method
+           <br> <strong>i.</strong> Load the proper value in T0CON indicating which timer mode, clock source, prescaler assignment.
+           <br> <strong>ii.</strong> Load the registers TMR0H first and then TMR0L with initial count values. Delay generated is Depends upon the initial count value.
+           <br> <strong>iii.</strong> Start the timer by setting TMR0ON bit in T0CON.
+           <br> <strong>iv.</strong> Keep the monitoring the timer flag (TMR0IF).
+           <br> <strong>v.</strong> Get out of the loop when TMR0IF becomes high.
+           <br> <strong>vi.</strong> Stop the timer.
+           <br> <strong>vii.</strong> Clear the TMR0IF flag for the next round.
+           <br> <strong>viii.</strong> Go back to the step 2 to load TMR0H and TMR0L values.</p>
+          <p><strong>The following steps are taken to generate a time delay using interrupt method</strong>
+           <br> <strong>i.</strong> Load the proper value in T0CON indicating which timer mode, clock
+          source, prescaler assignment.
+           <br> <strong>ii.</strong> Load the registers TMR0H first and then TMR0L with initial count values.
+          Delay generated is Depends upon the initial count value.
+           <br> <strong>iii.</strong> Enable the Timer0 Interrupt and Global Interrupt using INTCON Register
+           <br> <strong>iv.</strong> Start the timer by setting TMR0ON bit in T0CON.
+           <br> <strong>v.</strong> Write the ISR at Interrupt vector 0x0018.
+             <br> a. In ISR Clear the TMR0IF flag for the next round.
+            <br> b. In ISR reload TMR0H and TMR0L values.
+          The size of the time delay depends on two factors, (a) the crystal frequency and (b) the timer’s 16-bit register (c) the prescaler value. The largest delay is achieved by the making both TMR0H and TMR0L zero and using maximum prescaler value i.e. 1:256.</p>
+          <p><img src="images/image5.png" alt=" *Ex-3*"></p>
+          
+          </div>
+          <div class="bug-report-mobile">
+              <bug-report id="bug-report" title="[BUG REPORT] PROGRAMMING WITH ON-CHIP TIMERS/COUNTERS" page-type="text" context-info="{&quot;organisation&quot;:&quot;Virtual Labs&quot;,&quot;developer_institute&quot;:&quot;COEP&quot;,&quot;expname&quot;:&quot;PROGRAMMING WITH ON-CHIP TIMERS/COUNTERS&quot;,&quot;labname&quot;:&quot;Virtual Lab&quot;,&quot;phase&quot;:&quot;Testing&quot;}" checkbox-json="{&quot;text&quot;:[&quot;Insufficient Content&quot;],&quot;video&quot;:[&quot;Insufficient Content&quot;],&quot;assesment&quot;:[&quot;Incorrect Options&quot;,&quot;Incorrect Answer&quot;,&quot;Incorrect Question&quot;],&quot;assessment&quot;:[&quot;Incorrect Options&quot;,&quot;Incorrect Answer&quot;,&quot;Incorrect Question&quot;],&quot;simulation&quot;:[&quot;Simulation Not Working&quot;,&quot;Incorrect Results/Observations&quot;,&quot;Insufficient/Incorrect Instructions&quot;],&quot;DEFAULT&quot;:[&quot;Page Not Loading&quot;,&quot;Content Not Visible&quot;,&quot;Incorrect Content&quot;]}" position="override" button_style="
+                          position: fixed; 
+                          bottom: 20px;
+                          right: 20px;
+                          z-index: 1;
+                          font-size: 0;
+                          padding: 25px;
+                          border-radius: 50%;
+                          border: none;
+                          background-color: #0fc0ff;
+                          background-image: url(data:image/png;base64,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);
+                          background-repeat: no-repeat;
+                          background-position: center;
+                          background-size: 30px;
+                          filter: invert(1);">
+              </bug-report>
+          </div>        </div>
+      </div>
+      <footer class="text-light pt-2 vlabs-footer d-flex flex-column">
+        <div class="row px-5 mx-0">
+          <div class="col d-flex flex-column">
+            <span class="font-weight-bold vlabs-footer-sect-name pb-2 mb-3">Community Links</span>
+            <a href="https://www.sakshat.ac.in/" class="text-light">Sakshat Portal</a>
+            <a href="http://outreach.vlabs.ac.in/" class="text-light">Outreach Portal</a>
+            <a href="https://vlab.co.in/faq" class="text-light">FAQ: Virtual Labs</a>
+          </div>
+          <div class="col d-flex flex-column">
+            <span class="font-weight-bold vlabs-footer-sect-name pb-2 mb-3">Contact Us</span>
+            <span> Phone: General Information: 011-26582050 </span>
+            <span> Email: support@vlabs.ac.in </span>
+          </div>
+          <div class="col d-flex flex-column">
+            <span class="font-weight-bold vlabs-footer-sect-name pb-2 mb-3">Follow Us</span>
+            <div class="social-links">
+      	<a class="p-2 mt-1 mr-2 d-inline-flex justify-content-center align-items-center" style="background: #55acee;" href="https://twitter.com/TheVirtualLabs">
+      	  <i class="fab fa-twitter"></i>
+      	</a>
+      	<a class="p-2 mt-1 mr-2 d-inline-flex justify-content-center align-items-center" style="background: #3b5998;" href="https://www.facebook.com/Virtual-Labs-IIT-Delhi-301510159983871/">
+      	  <i class="fab fa-facebook"></i>
+      	</a>
+      	<a class="p-2 mt-1 mr-2 d-inline-flex justify-content-center align-items-center" style="background: #e52d27;" href="https://www.youtube.com/watch?v=asxRaOgk6a0">
+      	  <i class="fab fa-youtube"></i>
+      	</a>
+      	<a class="p-2 mt-1 mr-2 d-inline-flex justify-content-center align-items-center" style="background: #2867B2;" href="https://in.linkedin.com/in/virtual-labs-008ba9136">
+      	  <i class="fab fa-linkedin"></i>
+      	</a>
+            </div>
+          </div>
+        </div>
+        <div class="m-0 py-2 text-center" style="font-family: &quot;Open Sans&quot;, sans-serif; background: #212121;">
+          <a class="text-primary font-weight-bold" href="https://www.gnu.org/licenses/agpl-3.0.en.html"> AGPL 3.0 </a>
+          &nbsp;&amp;&nbsp;
+          <a class="text-primary font-weight-bold" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Creative Commons (CC BY-NC-SA 4.0) </a>
+        </div>
+      </footer>
+    <script src="./assets/js/toggleSidebar.js"></script>
+    <script src="./assets/js/event-handler.js"></script>
+
+
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register("sw.js");
+        });
+      }
+    </script>
+  
+
+<script type="module" src="https://cdn.vlabs.ac.in/bug-report/vlabs-bug-report.js"></script><script type="module" src="/exp-on-chip-timers-counters-coep/plugins/svc-rating/index.js"></script><script type="module" src="/exp-on-chip-timers-counters-coep/plugins/svc-rating/config.js"></script><script type="module" src="https://apis.google.com/js/api.js"></script></body></html>
